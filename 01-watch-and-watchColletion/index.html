@@ -4,7 +4,12 @@
   </head>
   <body>
     <div ng-controller="CounterController as counter">
-      h3
+      <h3>Counter: {{ counter.count }}</h3>
+      <div>
+        <a href="" ng-click="counter.increment()">Increment</a>
+        -
+        <a href="" ng-click="counter.decrement()">Decrement</a>
+      </div>
     </div>
     <script src="js/app.js"></script>
     <script src="js/controllers/counter.controller.js"></script>
