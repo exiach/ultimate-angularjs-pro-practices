@@ -1,7 +1,8 @@
 function counter() {
   return {
-    scope: {
-      count: '='
+    scope: {},
+    bindToController: {
+      count: '=',
     },
     template: `
       <h3>Counter: {{ counter.count }}</h3>
