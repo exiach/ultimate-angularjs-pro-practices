@@ -1,0 +1,31 @@
+<html ng-app="app">
+  <head>
+    <script src="js/angular.js"></script>
+    <style>
+      .error {
+        border: 1px solid blue;
+        margin: 10px;
+        height: 30px;
+      }
+      .error--warning {
+        border: 1px solid red;
+      }
+      .error--invalid {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div ng-controller="ErrorMessage as error">
+      <div ng-repeat="message in error.messages"
+          error-message
+          type="{{message.type}}">
+          {{message.message}}
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+
+</html>
