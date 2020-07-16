@@ -1,0 +1,39 @@
+<html ng-app="app">
+  <head>
+    <script src="js/angular.js"></script>
+    <style>
+      .tabs-content {
+        width: 100%;
+
+        border: 1px solid steelblue;
+      }
+      .content {
+        width: 100%;
+        border: 1px solid steelblue;
+        padding: 10px;
+      }
+      .list-tab {
+        display: flexbox;
+        flex-flow: row;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <tabs>
+      <tab label="One">
+        Content of One
+      </tab>
+      <tab label="Two">
+        Content of Two
+      </tab>
+      <tab label="">
+        Content of Three
+      </tab>
+    </tabs>
+
+    <script src="js/app.js"></script>
+    <script src="js/directives/tabs.directive.js"></script>
+    <script src="js/directives/tab.directive.js"></script>
+  </body>
+</html>
